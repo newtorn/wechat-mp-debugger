@@ -1,3 +1,5 @@
+/* make message struct */
+
 package main
 
 import (

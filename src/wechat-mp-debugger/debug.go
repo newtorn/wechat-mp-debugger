@@ -1,3 +1,5 @@
+/* debug for wechat mp server */
+
 package main
 
 import (

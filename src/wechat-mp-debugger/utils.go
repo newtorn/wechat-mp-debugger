@@ -1,3 +1,5 @@
+/* message utils for making a message */
+
 package main
 
 import (

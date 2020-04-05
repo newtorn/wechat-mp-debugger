@@ -1,3 +1,5 @@
+/* types for wechat server message */
+
 package main
 
 import "encoding/xml"
