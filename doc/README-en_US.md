@@ -3,7 +3,7 @@
 
 # Wechat Mp Debugger
 
-wechat public accounts message debugger
+wechat public accounts concurrent message debugger
 
 ## Build
 ```shell

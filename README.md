@@ -2,7 +2,7 @@
 
 # Wechat Mp Debugger
 
-微信公众号调试助手
+微信公众号并发调试助手
 
 ## 编译构建
 ```shell
