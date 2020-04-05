@@ -8,8 +8,8 @@ wechat public accounts message debugger
 ## Build
 ```shell
 git clone https://github.com/newtorn/wechat-mp-debugger.git
-cd wechat-mp-debugger/src
-go build -o wechat-mp-debugger
+cd wechat-mp-debugger/src/wechat-mp-debugger
+go build
 
 // run help
 ./wechat-mp-debugger -help
