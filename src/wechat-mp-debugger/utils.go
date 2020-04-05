@@ -64,7 +64,7 @@ func (msg *MsgBase) initMessage(from, to, msgtype, timestamp string) {
 	msg.FromUserName = strToCDATA(from)
 	msg.ToUserName = strToCDATA(to)
 	msg.MsgType = strToCDATA(msgtype)
-	msg.MsgId = strToCDATA(strconv.FormatInt(rand.Int63(), 10))
+	msg.MsgID = strToCDATA(strconv.FormatInt(rand.Int63(), 10))
 	msg.CreateTime = strToCDATA(timestamp)
 }
 
@@ -78,15 +78,15 @@ func makeTextMessage(from, to, msgtype, content, timestamp string) Text {
 func makeImageMessage(from, to, msgtype, mid, purl, timestamp string) Image {
 	var message Image
 	message.initMessage(from, to, msgtype, timestamp)
-	message.MediaId = strToCDATA(mid)
-	message.PicUrl = strToCDATA(purl)
+	message.MediaID = strToCDATA(mid)
+	message.PicURL = strToCDATA(purl)
 	return message
 }
 
 func makeVoiceMessage(from, to, msgtype, mid, ft, rg, timestamp string) Voice {
 	var message Voice
 	message.initMessage(from, to, msgtype, timestamp)
-	message.MediaId = strToCDATA(mid)
+	message.MediaID = strToCDATA(mid)
 	message.Format = strToCDATA(ft)
 	message.Recognition = strToCDATA(rg)
 	return message
@@ -95,24 +95,24 @@ func makeVoiceMessage(from, to, msgtype, mid, ft, rg, timestamp string) Voice {
 func makeVideoMessage(from, to, msgtype, mid, tmid, timestamp string) Video {
 	var message Video
 	message.initMessage(from, to, msgtype, timestamp)
-	message.MediaId = strToCDATA(mid)
-	message.ThumbMediaId = strToCDATA(tmid)
+	message.MediaID = strToCDATA(mid)
+	message.ThumbMediaID = strToCDATA(tmid)
 	return message
 }
 
 func makeShortVideoMessage(from, to, msgtype, mid, tmid, timestamp string) ShortVideo {
 	var message ShortVideo
 	message.initMessage(from, to, msgtype, timestamp)
-	message.MediaId = strToCDATA(mid)
-	message.ThumbMediaId = strToCDATA(tmid)
+	message.MediaID = strToCDATA(mid)
+	message.ThumbMediaID = strToCDATA(tmid)
 	return message
 }
 
 func makeLocationMessage(from, to, msgtype, lx, ly, sl, ll, timestamp string) Location {
 	var message Location
 	message.initMessage(from, to, msgtype, timestamp)
-	message.Location_X = strToCDATA(lx)
-	message.Location_Y = strToCDATA(ly)
+	message.LocationX = strToCDATA(lx)
+	message.LocationY = strToCDATA(ly)
 	message.Scale = strToCDATA(sl)
 	message.Label = strToCDATA(ll)
 	return message
@@ -123,7 +123,7 @@ func makeLinkMessage(from, to, msgtype, tt, dc, lurl, timestamp string) Link {
 	message.initMessage(from, to, msgtype, timestamp)
 	message.Title = strToCDATA(tt)
 	message.Description = strToCDATA(dc)
-	message.Url = strToCDATA(lurl)
+	message.URL = strToCDATA(lurl)
 	return message
 }
 
